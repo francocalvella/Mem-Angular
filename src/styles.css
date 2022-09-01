@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+    --yellow: #fea40f;
+    --orange: #ed5a00;
+    --light-orange: #ff7a27;
+    --red: #ef3220;
+    --blue: #300074;
+    --smooth-purple: #7d2af4;
+    --purple: #9d1897;
+    --grey: #d5c1ff;
+}
+
+.navbar-brand{
+    color: var(--smooth-purple);
+    font-weight: 600;
+}
+
+.nav-item{
+    font-weight: 600;
+}
+
+body{
+    background-color: var(--grey);
+}
+
+
+
+
+.footer{
+    border-top: 1px solid #222;
+    max-height: 70px;
+    height: 70px;
+    width: 100%;
+    background-color: var(--grey);
+    position: absolute;
+    bottom: 0;
+}

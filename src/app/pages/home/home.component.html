@@ -1,0 +1,19 @@
+<div class="button-container">
+    <button class="btn btn-primary post-link" routerLink="/publicar">Publicar</button>
+</div>
+
+<main class="d-flex flex-wrap flex-row">
+    <div class="card m-3" style="width: 18rem;" *ngFor="let article of articles">
+        <div class="card-body">
+            <h5 class="card-title">{{article.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{article.subtitle}}</h6>
+            <p class="card-text">{{article.corpus}}</p>
+            <div class="text-right card-info">
+                <b class="mr-2">{{article.author}}</b> -
+                <b class="mr-2">{{article.date}}</b>
+            </div>
+            <a href="#" class="btn btn-info" routerLink="nota/{{article.id}}">Ver</a>
+            <a href="#" class="btn btn-danger" (click)="onDelete(article)">Borrar</a>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,19 @@
+<form class="container-sm mt-3" [formGroup]="articleForm" (ngSubmit)="onSubmit()">
+    <div class="mb-2">
+        <label class="form-label">Título</label>
+        <input type="text" class="form-control" formControlName="title">
+    </div>
+    <div class="mb-2">
+        <label class="form-label">Subtítulo</label>
+        <input type="text" class="form-control" formControlName="subtitle">
+    </div>
+    <div class="mb-2">
+        <label class="form-label">Cuerpo</label>
+        <textarea cols="30" rows="10" class="form-control" formControlName="corpus"></textarea>
+    </div>
+    <div class="mb-2">
+        <label class="form-label">Autor</label>
+        <input type="text" class="form-control" formControlName="author">
+    </div>
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+</form>

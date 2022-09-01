@@ -1,0 +1,20 @@
+div > b {
+    padding: 5px;
+}
+
+.button-container{
+    width: 100%;
+    text-align: center;
+}
+
+.post-link{
+    margin: 8px;
+}
+
+.card-info{
+    text-align: right;
+}
+
+div > a {
+    margin: 3px;
+}
